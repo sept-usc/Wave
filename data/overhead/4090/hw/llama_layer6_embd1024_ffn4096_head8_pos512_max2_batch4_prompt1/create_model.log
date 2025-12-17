@@ -1,0 +1,2 @@
+Model already exists at: models/llama_layer6_embd1024_ffn4096_head8_pos512
+Use --force to recreate the model

@@ -1,0 +1,6 @@
+Benchmark 1: /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/.venv/bin/python3 /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type qwen --n_layer 8 --hidden-dim 4096 --ffn-dim 16384 --n_head 32 --n_positions 1024 --max_new_tokens 2 --batch-size 4 --prompt-len 1
+  Time (mean ± σ):     18.204 s ±  0.410 s    [User: 14.456 s, System: 6.467 s]
+  Range (min … max):   17.731 s … 18.444 s    3 runs
+ 
+  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet system without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.
+ 

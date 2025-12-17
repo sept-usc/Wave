@@ -1,0 +1,155 @@
+GPU-PMC-Verifier Overhead Evaluation Summary
+Generated: Mon Aug 18 11:31:38 UTC 2025
+GPU: h100
+============================================
+
+Processing results for: gpt2_layer6_embd1024_ffn4096_head16_pos512_max2_batch4_prompt1
+Configuration: gpt2, layers=6, hidden=1024, ffn=4096, heads=16, pos=512
+Parameters: max_tokens=2, batch_size=4, prompt_len=1
+
+  Direct timing (baseline):
+    Run 1: 10245.066655980001ms
+    Run 2: 10260.619422980002ms
+    Run 3: 10094.739543980002ms
+    Mean: 10200.141874313334ms
+    Std Dev: 91.61173816772552ms
+
+  NCU timing (with profiling):
+    Run 1: 140555.8486881ms
+    Run 2: 140672.2309471ms
+    Run 3: 140631.4326861ms
+    Mean: 140619.83744043333ms
+    Std Dev: 59.0512052716846ms
+
+  Overhead analysis:
+    Absolute overhead: 130419.695566119996ms
+    Relative overhead: 1278.00%
+    NCU profile file: profile.ncu-rep
+
+----------------------------------------
+
+Processing results for: gpt2_layer8_embd3072_ffn12288_head48_pos1024_max2_batch4_prompt1
+Configuration: gpt2, layers=8, hidden=3072, ffn=12288, heads=48, pos=1024
+Parameters: max_tokens=2, batch_size=4, prompt_len=1
+
+  Direct timing (baseline):
+    Run 1: 12533.53693884ms
+    Run 2: 12169.965162839999ms
+    Run 3: 12823.84684284ms
+    Mean: 12509.11631484ms
+    Std Dev: 327.62415664495506ms
+
+  NCU timing (with profiling):
+    Run 1: 165801.59310172ms
+    Run 2: 167788.63894672ms
+    Run 3: 167210.12204972003ms
+    Mean: 166933.45136605334ms
+    Std Dev: 1022.0067504343409ms
+
+  Overhead analysis:
+    Absolute overhead: 154424.33505121334ms
+    Relative overhead: 1234.00%
+    NCU profile file: profile.ncu-rep
+
+----------------------------------------
+
+Processing results for: llama_layer6_embd1024_ffn4096_head8_pos512_max2_batch4_prompt1
+Configuration: llama, layers=6, hidden=1024, ffn=4096, heads=8, pos=512
+Parameters: max_tokens=2, batch_size=4, prompt_len=1
+
+  Direct timing (baseline):
+    Run 1: 10462.64123514ms
+    Run 2: 10499.17861314ms
+    Run 3: 10303.80244214ms
+    Mean: 10421.874096806667ms
+    Std Dev: 103.87218937026452ms
+
+  NCU timing (with profiling):
+    Run 1: 175384.05035675998ms
+    Run 2: 175584.28483176ms
+    Run 3: 176000.78110375997ms
+    Mean: 175656.37209742668ms
+    Std Dev: 314.62141372968205ms
+
+  Overhead analysis:
+    Absolute overhead: 165234.498000620013ms
+    Relative overhead: 1585.00%
+    NCU profile file: profile.ncu-rep
+
+----------------------------------------
+
+Processing results for: llama_layer8_embd4096_ffn16384_head32_pos1024_max2_batch4_prompt1
+Configuration: llama, layers=8, hidden=4096, ffn=16384, heads=32, pos=1024
+Parameters: max_tokens=2, batch_size=4, prompt_len=1
+
+  Direct timing (baseline):
+    Run 1: 16069.502819460002ms
+    Run 2: 16562.301246460003ms
+    Run 3: 16803.41839946ms
+    Mean: 16478.407488460005ms
+    Std Dev: 374.08106289306517ms
+
+  NCU timing (with profiling):
+    Run 1: 226325.94915138ms
+    Run 2: 226429.03697937998ms
+    Run 3: 226931.02595838ms
+    Mean: 226562.00402971334ms
+    Std Dev: 323.71231510105866ms
+
+  Overhead analysis:
+    Absolute overhead: 210083.596541253335ms
+    Relative overhead: 1274.00%
+    NCU profile file: profile.ncu-rep
+
+----------------------------------------
+
+Processing results for: qwen_layer6_embd1024_ffn4096_head8_pos512_max2_batch4_prompt1
+Configuration: qwen, layers=6, hidden=1024, ffn=4096, heads=8, pos=512
+Parameters: max_tokens=2, batch_size=4, prompt_len=1
+
+  Direct timing (baseline):
+    Run 1: 11178.954338540001ms
+    Run 2: 11037.369609540001ms
+    Run 3: 11090.837775540002ms
+    Mean: 11102.387241206668ms
+    Std Dev: 71.49546481693775ms
+
+  NCU timing (with profiling):
+    Run 1: 174581.00146040003ms
+    Run 2: 172632.8163274ms
+    Run 3: 176776.3586604ms
+    Mean: 174663.39214940002ms
+    Std Dev: 2072.999502066074ms
+
+  Overhead analysis:
+    Absolute overhead: 163561.004908193352ms
+    Relative overhead: 1473.00%
+    NCU profile file: profile.ncu-rep
+
+----------------------------------------
+
+Processing results for: qwen_layer8_embd4096_ffn16384_head32_pos1024_max2_batch4_prompt1
+Configuration: qwen, layers=8, hidden=4096, ffn=16384, heads=32, pos=1024
+Parameters: max_tokens=2, batch_size=4, prompt_len=1
+
+  Direct timing (baseline):
+    Run 1: 18437.716904880002ms
+    Run 2: 18443.97657288ms
+    Run 3: 17730.705415880002ms
+    Mean: 18204.13296454667ms
+    Std Dev: 410.0122299862086ms
+
+  NCU timing (with profiling):
+    Run 1: 235949.49935322002ms
+    Run 2: 236057.81690322002ms
+    Run 3: 235985.10952222ms
+    Mean: 235997.47525955335ms
+    Std Dev: 55.20739537733158ms
+
+  Overhead analysis:
+    Absolute overhead: 217793.34229500668ms
+    Relative overhead: 1196.00%
+    NCU profile file: profile.ncu-rep
+
+----------------------------------------
+

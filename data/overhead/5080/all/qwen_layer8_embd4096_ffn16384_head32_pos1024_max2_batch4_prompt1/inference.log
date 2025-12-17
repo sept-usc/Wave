@@ -1,0 +1,19 @@
+Using existing model at: models/qwen_layer8_embd4096_ffn16384_head32_pos1024
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 165.06it/s]
+Generating with parameters: max_tokens=2
+Batch size: 4, Prompt seq len: 1
+
+Generated Outputs:
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello Emojiuture'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello녹責'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello單-date'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello котор TOD'
+------------------------------------------------------------

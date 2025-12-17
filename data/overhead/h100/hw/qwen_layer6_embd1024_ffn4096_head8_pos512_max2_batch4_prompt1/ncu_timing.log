@@ -1,0 +1,6 @@
+Benchmark 1: ncu --config-file off --export /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/data/overhead/h100/hw/qwen_layer6_embd1024_ffn4096_head8_pos512_max2_batch4_prompt1/profile.ncu-rep --force-overwrite --replay-mode application --app-replay-mode relaxed --metrics gpu__time_duration.sum /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/.venv/bin/python3 /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type qwen --n_layer 6 --hidden-dim 1024 --ffn-dim 4096 --n_head 8 --n_positions 512 --max_new_tokens 2 --batch-size 4 --prompt-len 1
+  Time (mean ± σ):     20.086 s ±  0.699 s    [User: 16.519 s, System: 6.244 s]
+  Range (min … max):   19.278 s … 20.509 s    3 runs
+ 
+  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet system without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.
+ 

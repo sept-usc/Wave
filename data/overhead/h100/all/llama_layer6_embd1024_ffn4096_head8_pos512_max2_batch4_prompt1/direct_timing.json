@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "command": "/home/ubuntu/wave-asplos26/GPU-PMC-Verifier/.venv/bin/python3 /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type llama --n_layer 6 --hidden-dim 1024 --ffn-dim 4096 --n_head 8 --n_positions 512 --max_new_tokens 2 --batch-size 4 --prompt-len 1",
+      "mean": 10.421874096806667,
+      "stddev": 0.10387218937026452,
+      "median": 10.46264123514,
+      "user": 11.106303539999999,
+      "system": 2.0702255866666666,
+      "min": 10.30380244214,
+      "max": 10.49917861314,
+      "times": [
+        10.46264123514,
+        10.49917861314,
+        10.30380244214
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

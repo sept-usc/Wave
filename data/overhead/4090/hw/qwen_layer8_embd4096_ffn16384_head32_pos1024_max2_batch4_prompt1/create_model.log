@@ -1,0 +1,2 @@
+Model already exists at: models/qwen_layer8_embd4096_ffn16384_head32_pos1024
+Use --force to recreate the model

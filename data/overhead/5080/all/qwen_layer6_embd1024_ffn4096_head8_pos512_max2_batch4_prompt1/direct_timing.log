@@ -1,0 +1,4 @@
+Benchmark 1: /home/haoxuan/research/GPU-PMC-Verifier/.venv/bin/python3 /home/haoxuan/research/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type qwen --n_layer 6 --hidden-dim 1024 --ffn-dim 4096 --n_head 8 --n_positions 512 --max_new_tokens 2 --batch-size 4 --prompt-len 1
+  Time (mean ± σ):      4.544 s ±  0.018 s    [User: 6.563 s, System: 2.245 s]
+  Range (min … max):    4.530 s …  4.564 s    3 runs
+ 

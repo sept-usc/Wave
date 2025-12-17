@@ -1,0 +1,19 @@
+Using existing model at: models/qwen_layer8_embd4096_ffn16384_head32_pos1024
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.43it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.38it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:01<00:00,  1.55it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:01<00:00,  1.50it/s]
+Generating with parameters: max_tokens=2
+Batch size: 4, Prompt seq len: 1
+
+Generated Outputs:
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello Francois早早'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Helloเศรษฐกิจ_RATIO'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello mag numéro'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello coef太阳城'
+------------------------------------------------------------

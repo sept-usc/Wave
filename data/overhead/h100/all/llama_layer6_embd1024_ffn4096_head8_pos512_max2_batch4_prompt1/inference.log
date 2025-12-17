@@ -1,0 +1,19 @@
+Using existing model at: models/llama_layer6_embd1024_ffn4096_head8_pos512
+Warning: models/llama_layer6_embd1024_ffn4096_head8_pos512 may not contain a tokenizer. This could cause issues.
+Generating with parameters: max_tokens=2
+Batch size: 4, Prompt seq len: 1
+
+Generated Outputs:
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Helloérica ха'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello Présup'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello raggiious'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hellocomputns'
+------------------------------------------------------------

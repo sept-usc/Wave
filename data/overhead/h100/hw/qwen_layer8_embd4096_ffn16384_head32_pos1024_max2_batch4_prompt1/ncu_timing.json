@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "command": "ncu --config-file off --export /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/data/overhead/h100/hw/qwen_layer8_embd4096_ffn16384_head32_pos1024_max2_batch4_prompt1/profile.ncu-rep --force-overwrite --replay-mode application --app-replay-mode relaxed --metrics gpu__time_duration.sum /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/.venv/bin/python3 /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type qwen --n_layer 8 --hidden-dim 4096 --ffn-dim 16384 --n_head 32 --n_positions 1024 --max_new_tokens 2 --batch-size 4 --prompt-len 1",
+      "mean": 28.3523492181,
+      "stddev": 0.7138175111833451,
+      "median": 28.0883603841,
+      "user": 20.825660353333333,
+      "system": 11.596895506666668,
+      "min": 27.8081277961,
+      "max": 29.1605594741,
+      "times": [
+        29.1605594741,
+        28.0883603841,
+        27.8081277961
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

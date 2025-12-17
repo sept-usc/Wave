@@ -1,0 +1,18 @@
+Using existing model at: models/qwen_layer6_embd1024_ffn4096_head8_pos512
+Generating with parameters: max_tokens=2
+Batch size: 4, Prompt seq len: 1
+
+Generated Outputs:
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello➷躇'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello Hồngﻯ'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello kaufen selector'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Helloession Jess'
+------------------------------------------------------------

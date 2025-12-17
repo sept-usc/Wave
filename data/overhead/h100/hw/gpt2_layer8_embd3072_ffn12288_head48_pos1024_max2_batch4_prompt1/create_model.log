@@ -1,0 +1,7 @@
+Creating gpt2 model with config:
+  n_layer: 8
+  n_embd: 3072
+  ffn_dim: 12288
+  n_head: 48
+  n_positions: 1024
+Model successfully created at: models/gpt2_layer8_embd3072_ffn12288_head48_pos1024

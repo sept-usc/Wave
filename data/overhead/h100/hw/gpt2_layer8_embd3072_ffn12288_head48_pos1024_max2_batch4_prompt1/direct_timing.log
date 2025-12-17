@@ -1,0 +1,6 @@
+Benchmark 1: /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/.venv/bin/python3 /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type gpt2 --n_layer 8 --hidden-dim 3072 --ffn-dim 12288 --n_head 48 --n_positions 1024 --max_new_tokens 2 --batch-size 4 --prompt-len 1
+  Time (mean ± σ):     12.905 s ±  0.264 s    [User: 11.977 s, System: 3.332 s]
+  Range (min … max):   12.748 s … 13.210 s    3 runs
+ 
+  Warning: The first benchmarking run for this command was significantly slower than the rest (13.210 s). This could be caused by (filesystem) caches that were not filled until after the first run. You are already using the '--warmup' option which helps to fill these caches before the actual benchmark. You can either try to increase the warmup count further or re-run this benchmark on a quiet system in case it was a random outlier. Alternatively, consider using the '--prepare' option to clear the caches before each timing run.
+ 

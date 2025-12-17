@@ -1,0 +1,2 @@
+Model already exists at: models/gpt2_layer6_embd1024_ffn4096_head16_pos512
+Use --force to recreate the model

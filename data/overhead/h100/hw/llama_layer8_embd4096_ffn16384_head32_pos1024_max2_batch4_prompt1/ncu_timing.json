@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "command": "ncu --config-file off --export /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/data/overhead/h100/hw/llama_layer8_embd4096_ffn16384_head32_pos1024_max2_batch4_prompt1/profile.ncu-rep --force-overwrite --replay-mode application --app-replay-mode relaxed --metrics gpu__time_duration.sum /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/.venv/bin/python3 /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type llama --n_layer 8 --hidden-dim 4096 --ffn-dim 16384 --n_head 32 --n_positions 1024 --max_new_tokens 2 --batch-size 4 --prompt-len 1",
+      "mean": 26.779082337286667,
+      "stddev": 0.07319970629833893,
+      "median": 26.75478975362,
+      "user": 19.53870912,
+      "system": 10.064228253333331,
+      "min": 26.721117290619997,
+      "max": 26.861339967619998,
+      "times": [
+        26.861339967619998,
+        26.75478975362,
+        26.721117290619997
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

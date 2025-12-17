@@ -1,0 +1,8 @@
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama.LlamaTokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message
+Creating llama model with config:
+  n_layer: 6
+  n_embd: 1024
+  ffn_dim: 4096
+  n_head: 8
+  n_positions: 512
+Model successfully created at: models/llama_layer6_embd1024_ffn4096_head8_pos512

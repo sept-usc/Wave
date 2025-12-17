@@ -1,0 +1,6 @@
+Benchmark 1: ncu --config-file off --export /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/data/overhead/h100/hw/gpt2_layer8_embd3072_ffn12288_head48_pos1024_max2_batch4_prompt1/profile.ncu-rep --force-overwrite --replay-mode application --app-replay-mode relaxed --metrics gpu__time_duration.sum /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/.venv/bin/python3 /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type gpt2 --n_layer 8 --hidden-dim 3072 --ffn-dim 12288 --n_head 48 --n_positions 1024 --max_new_tokens 2 --batch-size 4 --prompt-len 1
+  Time (mean ± σ):     21.160 s ±  0.705 s    [User: 16.974 s, System: 7.024 s]
+  Range (min … max):   20.345 s … 21.579 s    3 runs
+ 
+  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet system without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.
+ 

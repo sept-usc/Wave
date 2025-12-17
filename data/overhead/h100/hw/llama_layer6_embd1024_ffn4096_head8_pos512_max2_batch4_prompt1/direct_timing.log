@@ -1,0 +1,4 @@
+Benchmark 1: /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/.venv/bin/python3 /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type llama --n_layer 6 --hidden-dim 1024 --ffn-dim 4096 --n_head 8 --n_positions 512 --max_new_tokens 2 --batch-size 4 --prompt-len 1
+  Time (mean ± σ):     10.596 s ±  0.100 s    [User: 11.123 s, System: 2.110 s]
+  Range (min … max):   10.509 s … 10.705 s    3 runs
+ 

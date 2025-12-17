@@ -1,0 +1,4 @@
+Benchmark 1: /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/.venv/bin/python3 /home/ubuntu/wave-asplos26/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type gpt2 --n_layer 8 --hidden-dim 3072 --ffn-dim 12288 --n_head 48 --n_positions 1024 --max_new_tokens 2 --batch-size 4 --prompt-len 1
+  Time (mean ± σ):     12.509 s ±  0.328 s    [User: 11.891 s, System: 3.419 s]
+  Range (min … max):   12.170 s … 12.824 s    3 runs
+ 

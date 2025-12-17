@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "command": "/home/haoxuan/research/GPU-PMC-Verifier/.venv/bin/python3 /home/haoxuan/research/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type gpt2 --n_layer 6 --hidden-dim 1024 --ffn-dim 4096 --n_head 16 --n_positions 512 --max_new_tokens 2 --batch-size 4 --prompt-len 1",
+      "mean": 4.282139092413334,
+      "stddev": 0.009264581778775335,
+      "median": 4.28424292908,
+      "user": 6.5061952000000005,
+      "system": 2.2129461266666666,
+      "min": 4.27200351408,
+      "max": 4.29017083408,
+      "times": [
+        4.28424292908,
+        4.29017083408,
+        4.27200351408
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "command": "ncu --config-file off --export /home/haoxuan/research/gpu-report/GPU-PMC-Verifier/data/overhead/4090/hw/gpt2_layer6_embd1024_ffn4096_head16_pos512_max2_batch4_prompt1/profile.ncu-rep --force-overwrite --replay-mode application --app-replay-mode relaxed --metrics gpu__time_duration.sum /home/haoxuan/research/gpu-report/GPU-PMC-Verifier/.venv/bin/python3 /home/haoxuan/research/gpu-report/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type gpt2 --n_layer 6 --hidden-dim 1024 --ffn-dim 4096 --n_head 16 --n_positions 512 --max_new_tokens 2 --batch-size 4 --prompt-len 1",
+      "mean": 39.27500173878,
+      "stddev": 3.03038774346855,
+      "median": 39.31047052678,
+      "user": 9.602843273333333,
+      "system": 2.4220754066666665,
+      "min": 36.22703528278,
+      "max": 42.28749940678,
+      "times": [
+        36.22703528278,
+        42.28749940678,
+        39.31047052678
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

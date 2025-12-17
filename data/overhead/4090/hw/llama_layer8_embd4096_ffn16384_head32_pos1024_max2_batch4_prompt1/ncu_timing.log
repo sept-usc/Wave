@@ -1,0 +1,4 @@
+Benchmark 1: ncu --config-file off --export /home/haoxuan/research/gpu-report/GPU-PMC-Verifier/data/overhead/4090/hw/llama_layer8_embd4096_ffn16384_head32_pos1024_max2_batch4_prompt1/profile.ncu-rep --force-overwrite --replay-mode application --app-replay-mode relaxed --metrics gpu__time_duration.sum /home/haoxuan/research/gpu-report/GPU-PMC-Verifier/.venv/bin/python3 /home/haoxuan/research/gpu-report/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type llama --n_layer 8 --hidden-dim 4096 --ffn-dim 16384 --n_head 32 --n_positions 1024 --max_new_tokens 2 --batch-size 4 --prompt-len 1
+  Time (mean ± σ):     39.689 s ± 11.394 s    [User: 10.649 s, System: 3.777 s]
+  Range (min … max):   26.641 s … 47.677 s    3 runs
+ 

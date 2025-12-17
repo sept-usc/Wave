@@ -1,0 +1,4 @@
+Benchmark 1: /home/haoxuan/research/GPU-PMC-Verifier/.venv/bin/python3 /home/haoxuan/research/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type llama --n_layer 8 --hidden-dim 4096 --ffn-dim 16384 --n_head 32 --n_positions 1024 --max_new_tokens 2 --batch-size 4 --prompt-len 1
+  Time (mean ± σ):      5.943 s ±  0.267 s    [User: 7.187 s, System: 2.595 s]
+  Range (min … max):    5.643 s …  6.156 s    3 runs
+ 

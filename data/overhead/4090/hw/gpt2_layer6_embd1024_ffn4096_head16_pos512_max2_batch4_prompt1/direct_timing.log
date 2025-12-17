@@ -1,0 +1,4 @@
+Benchmark 1: /home/haoxuan/research/gpu-report/GPU-PMC-Verifier/.venv/bin/python3 /home/haoxuan/research/gpu-report/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type gpt2 --n_layer 6 --hidden-dim 1024 --ffn-dim 4096 --n_head 16 --n_positions 512 --max_new_tokens 2 --batch-size 4 --prompt-len 1
+  Time (mean ± σ):      2.741 s ±  0.027 s    [User: 7.605 s, System: 0.521 s]
+  Range (min … max):    2.713 s …  2.768 s    3 runs
+ 

@@ -1,0 +1,4 @@
+Benchmark 1: ncu --config-file off --export /home/haoxuan/research/gpu-report/GPU-PMC-Verifier/data/overhead/4090/hw/gpt2_layer8_embd3072_ffn12288_head48_pos1024_max2_batch4_prompt1/profile.ncu-rep --force-overwrite --replay-mode application --app-replay-mode relaxed --metrics gpu__time_duration.sum /home/haoxuan/research/gpu-report/GPU-PMC-Verifier/.venv/bin/python3 /home/haoxuan/research/gpu-report/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type gpt2 --n_layer 8 --hidden-dim 3072 --ffn-dim 12288 --n_head 48 --n_positions 1024 --max_new_tokens 2 --batch-size 4 --prompt-len 1
+  Time (mean ± σ):     36.900 s ±  7.966 s    [User: 9.971 s, System: 2.788 s]
+  Range (min … max):   30.933 s … 45.946 s    3 runs
+ 

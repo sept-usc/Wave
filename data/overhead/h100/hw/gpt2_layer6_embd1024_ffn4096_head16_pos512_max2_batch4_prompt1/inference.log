@@ -1,0 +1,18 @@
+Using existing model at: models/gpt2_layer6_embd1024_ffn4096_head16_pos512
+Generating with parameters: max_tokens=2
+Batch size: 4, Prompt seq len: 1
+
+Generated Outputs:
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hellobc ambig'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello instit suff'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Helloibuú'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello prec seriously'
+------------------------------------------------------------

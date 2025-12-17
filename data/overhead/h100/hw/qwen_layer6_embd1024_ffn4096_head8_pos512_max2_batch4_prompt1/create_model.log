@@ -1,0 +1,7 @@
+Creating qwen model with config:
+  n_layer: 6
+  n_embd: 1024
+  ffn_dim: 4096
+  n_head: 8
+  n_positions: 512
+Model successfully created at: models/qwen_layer6_embd1024_ffn4096_head8_pos512

@@ -1,0 +1,18 @@
+Using existing model at: models/gpt2_layer8_embd3072_ffn12288_head48_pos1024
+Generating with parameters: max_tokens=2
+Batch size: 4, Prompt seq len: 1
+
+Generated Outputs:
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Helloowment Burr'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'HelloAgain590'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hellothur Chung'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello555 Cobra'
+------------------------------------------------------------

@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "command": "ncu --config-file off --export /home/haoxuan/research/GPU-PMC-Verifier/data/overhead/5080/llama_layer6_embd1024_ffn4096_head8_pos512_max2_batch4_prompt1/profile.ncu-rep --force-overwrite --replay-mode application --app-replay-mode relaxed --metrics gpu__time_duration.sum /home/haoxuan/research/GPU-PMC-Verifier/.venv/bin/python3 /home/haoxuan/research/GPU-PMC-Verifier/eval/pytorch/inference.py --model-type llama --n_layer 6 --hidden-dim 1024 --ffn-dim 4096 --n_head 8 --n_positions 512 --max_new_tokens 2 --batch-size 4 --prompt-len 1",
+      "mean": 9.853275021253333,
+      "stddev": 0.28556757669497973,
+      "median": 9.700409546920001,
+      "user": 12.291336373333335,
+      "system": 6.148524546666667,
+      "min": 9.67668018892,
+      "max": 10.18273532792,
+      "times": [
+        9.67668018892,
+        9.700409546920001,
+        10.18273532792
+      ],
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

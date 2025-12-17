@@ -1,0 +1,134 @@
+{
+  "parameters": {
+    "b": 4,
+    "s": 1,
+    "d": 1024,
+    "d_ffn": 4096,
+    "model_size": 25165824,
+    "granularity": 256,
+    "additional_args": []
+  },
+  "kernel_configs": [
+    {
+      "layer_name": "q_proj",
+      "split": 1,
+      "split_type": "none",
+      "shape": {
+        "b": 4,
+        "m": 1,
+        "k": 1024,
+        "n": 1024
+      }
+    },
+    {
+      "layer_name": "k_proj",
+      "split": 2,
+      "split_type": "batch-split",
+      "shape": {
+        "b": 2,
+        "m": 1,
+        "k": 1024,
+        "n": 1024
+      }
+    },
+    {
+      "layer_name": "k_proj",
+      "split": 2,
+      "split_type": "batch-split",
+      "shape": {
+        "b": 2,
+        "m": 1,
+        "k": 1024,
+        "n": 1024
+      }
+    },
+    {
+      "layer_name": "v_proj",
+      "split": 2,
+      "split_type": "batch-split",
+      "shape": {
+        "b": 2,
+        "m": 1,
+        "k": 1024,
+        "n": 1024
+      }
+    },
+    {
+      "layer_name": "v_proj",
+      "split": 2,
+      "split_type": "batch-split",
+      "shape": {
+        "b": 2,
+        "m": 1,
+        "k": 1024,
+        "n": 1024
+      }
+    },
+    {
+      "layer_name": "o_proj",
+      "split": 2,
+      "split_type": "hstack",
+      "shape": {
+        "b": 4,
+        "m": 1,
+        "k": 1024,
+        "n": 768
+      }
+    },
+    {
+      "layer_name": "o_proj",
+      "split": 2,
+      "split_type": "hstack",
+      "shape": {
+        "b": 4,
+        "m": 1,
+        "k": 1024,
+        "n": 256
+      }
+    },
+    {
+      "layer_name": "up_proj",
+      "split": 2,
+      "split_type": "k-split",
+      "shape": {
+        "b": 4,
+        "m": 1,
+        "k": 256,
+        "n": 4096
+      }
+    },
+    {
+      "layer_name": "up_proj",
+      "split": 2,
+      "split_type": "k-split",
+      "shape": {
+        "b": 4,
+        "m": 1,
+        "k": 768,
+        "n": 4096
+      }
+    },
+    {
+      "layer_name": "down_proj",
+      "split": 2,
+      "split_type": "k-split",
+      "shape": {
+        "b": 4,
+        "m": 1,
+        "k": 2048,
+        "n": 1024
+      }
+    },
+    {
+      "layer_name": "down_proj",
+      "split": 2,
+      "split_type": "k-split",
+      "shape": {
+        "b": 4,
+        "m": 1,
+        "k": 2048,
+        "n": 1024
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+Using existing model at: models/llama_layer8_embd4096_ffn16384_head32_pos1024
+Warning: models/llama_layer8_embd4096_ffn16384_head32_pos1024 may not contain a tokenizer. This could cause issues.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  2.79it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.16it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.10it/s]
+Generating with parameters: max_tokens=2
+Batch size: 4, Prompt seq len: 1
+
+Generated Outputs:
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello Praatten'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello败TA'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Helloω𝕜'
+------------------------------------------------------------
+Prompt:    'Hello'
+Output:    'Hello Japaneseivan'
+------------------------------------------------------------

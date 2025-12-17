@@ -1,0 +1,1 @@
+uv run eval/upper_bound/collect_metrics.py -e eval/upper_bound/run_split_attack.py --batch-sizes 4 --seq-lens 1 --hidden-dims 1024 --ffn-dims 4096
