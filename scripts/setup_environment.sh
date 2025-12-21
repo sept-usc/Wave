@@ -44,7 +44,7 @@ fi
 # Check NVIDIA profiling configuration (Linux only)
 if [[ "$OSTYPE" == "linux-gnu"* ]] && [ -f "/proc/driver/nvidia/params" ]; then
     RmProfilingAdminOnly=$(cat /proc/driver/nvidia/params 2>/dev/null | grep RmProfilingAdminOnly || echo "")
-    if [ -n "$RmProfilingAdminOnly" ] && echo "$RmProfilingAdminOnly" | grep -q "RmProfilingAdminOnly=1"; then
+    if [ -n "$RmProfilingAdminOnly" ] && echo "$RmProfilingAdminOnly" | grep -q "RmProfilingAdminOnly: 1"; then
         print_info "Configuring NVIDIA profiling..."
         PROFILE_CONF="/etc/modprobe.d/nvidia-profile.conf"
         if [ ! -f "$PROFILE_CONF" ] || ! grep -q "NVreg_RestrictProfilingToAdminUsers=0" "$PROFILE_CONF"; then
