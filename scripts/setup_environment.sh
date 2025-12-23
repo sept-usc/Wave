@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Script to prepare the environment for Wave
-# Sets up CUDA, Nsight Compute, and uv package manager
+# Sets up CUDA, Nsight Compute, overhead dependencies (hyperfine, bc, jq), and uv package manager
 
 set -e
 
@@ -56,7 +56,59 @@ if [[ "$OSTYPE" == "linux-gnu"* ]] && [ -f "/proc/driver/nvidia/params" ]; then
 fi
 echo ""
 
-# 3. uv Installation
+# 3. Overhead Dependencies (hyperfine, bc, jq)
+print_info "=== Overhead Dependencies ==="
+
+# Check and install Rust/cargo (required for hyperfine)
+if command -v cargo &> /dev/null; then
+    print_success "Rust/cargo found"
+else
+    print_info "Installing Rust with rustup..."
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y || print_warning "Rust installation failed"
+    # Source cargo environment if rustup was just installed
+    if [ -f "$HOME/.cargo/env" ]; then
+        source "$HOME/.cargo/env"
+    fi
+fi
+
+# Check and install hyperfine
+if command -v hyperfine &> /dev/null; then
+    print_success "hyperfine found"
+else
+    if command -v cargo &> /dev/null; then
+        print_info "Installing hyperfine with cargo..."
+        cargo install --locked hyperfine || print_warning "hyperfine installation failed"
+    else
+        print_warning "cargo not available. Please restart shell and run again, or install hyperfine manually"
+    fi
+fi
+
+# Check and install bc
+if command -v bc &> /dev/null; then
+    print_success "bc found"
+else
+    if [[ "$OSTYPE" == "linux-gnu"* ]] && command -v apt-get &> /dev/null; then
+        print_info "Installing bc..."
+        sudo apt-get install -y bc || print_warning "bc installation failed"
+    else
+        print_warning "Please install bc manually"
+    fi
+fi
+
+# Check and install jq
+if command -v jq &> /dev/null; then
+    print_success "jq found"
+else
+    if [[ "$OSTYPE" == "linux-gnu"* ]] && command -v apt-get &> /dev/null; then
+        print_info "Installing jq..."
+        sudo apt-get install -y jq || print_warning "jq installation failed"
+    else
+        print_warning "Please install jq manually"
+    fi
+fi
+echo ""
+
+# 4. uv Installation
 print_info "=== uv Installation ==="
 if command -v uv &> /dev/null; then
     print_success "uv found"
@@ -66,7 +118,7 @@ else
 fi
 echo ""
 
-# 4. Install Python dependencies
+# 5. Install Python dependencies
 print_info "=== Installing Python Dependencies ==="
 if command -v uv &> /dev/null; then
     uv sync
