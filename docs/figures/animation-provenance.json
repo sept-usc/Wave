@@ -1,0 +1,59 @@
+{
+  "title": "Wave explanatory animations",
+  "created": "2026-11-06",
+  "source_commit": "29773cdce6bf06313dc340bce5df86d920e2ed21",
+  "sources": [
+    "https://github.com/sept-usc/Wave/tree/29773cdce6bf06313dc340bce5df86d920e2ed21",
+    "https://terryxu.site/assets/pdf/wave-asplos26.pdf",
+    "https://doi.org/10.1145/3779212.3790247"
+  ],
+  "method": "Original code-rendered technical schematics created with Codex. Adapted MIT-licensed drawing and Excalidraw primitives from Lanshu's animated architecture diagram skill. No paper image, logo, stock image or generative raster output was copied into these diagrams.",
+  "code_license": "MIT; adapted primitives retain copyright (c) 2026 Lanshu in _tools/LICENSE-lanshu.txt",
+  "new_diagram_license": "Original rendered diagrams and editable artwork are dual licensed: MIT OR CC BY 4.0. Renderer code remains MIT; adapted primitives retain the Lanshu notice.",
+  "cc_license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "render_environment": "Python 3.12; Pillow 13.0.0; imageio-ffmpeg 0.8.1 with ffmpeg 9.0 on macOS arm64",
+  "render_command": "python docs/figures/render-animations.py",
+  "dependencies": "Pillow; ffmpeg on PATH or imageio-ffmpeg for MP4. See requirements-animation.txt. Helvetica on macOS; DejaVu Sans or Liberation Sans on Linux; Arial on Windows. Font-dependent rasterization may differ between systems.",
+  "formats": ["Animated GIF", "H.264/yuv420p MP4", "PNG poster", "editable SVG", "editable Excalidraw", "JSON source specification"],
+  "delivery": "The article should use a paused native video player and poster, with an explicit GIF link. The README can display GIF with a still-image alternative. All information is repeated in prose for accessibility.",
+  "figures": [
+    {
+      "basename": "wave-observation",
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 12,
+      "timeline_fps": 10,
+      "alt": {
+        "en": "Four steps connect private GPU inference, arithmetic and memory observations, architecture constraints, and model-size bound checks. A note distinguishes the assumed authenticated counter path from the released Nsight Compute prototype.",
+        "zh": "四个阶段依次连接私有模型的 GPU 推理、运算与访存观测、架构约束和模型规模边界检查。图中区分了假设中的可信计数器通路与已发布的 Nsight Compute 原型。"
+      },
+      "caption": {
+        "en": "Conceptual flow, animated one stage at a time. Counters constrain feasible architectures; the check does not identify exact weights or establish output correctness. The authenticated measurement path is a deployment assumption, not part of the released artifact.",
+        "zh": "按阶段播放的机制示意图。计数器约束可能的模型架构；此检查不能识别精确权重，也不能确定输出是否正确。可信且经过认证的测量通路是部署假设，并未包含在已发布的实验代码中。"
+      },
+      "data_note": "Bars inside the counter card are schematic, with no measurement scale; they are not experiment results."
+    },
+    {
+      "basename": "wave-bounds",
+      "width": 1280,
+      "height": 800,
+      "duration_seconds": 16,
+      "timeline_fps": 10,
+      "alt": {
+        "en": "A toy feasible parameter range from 80 to 120 is checked against four minimum and maximum claims. SAT marks a violating feasible candidate; UNSAT means no such candidate exists within this modeled set.",
+        "zh": "示意中，观测允许参数规模处于 80 至 120 之间。动画依次检查四个最小值与最大值声明：SAT 表示找到违反声明的可行候选，UNSAT 表示此建模集合内不存在这样的候选。"
+      },
+      "caption": {
+        "en": "Illustrative counterexample search in arbitrary units, not paper measurements or an actual solver trace. A SAT result makes the bound uncertified. An UNSAT result excludes violations only within the modeled feasible set and assumptions; UNKNOWN remains inconclusive. The artifact's current verify() return value does not distinguish all non-SAT outcomes.",
+        "zh": "使用任意单位说明反例搜索，并非论文测量值或求解器的真实运行记录。SAT 表示该边界声明尚不能得到确认；UNSAT 只排除了当前建模集合与假设下的违规情形；UNKNOWN 仍属无法判定。当前实验代码的 verify() 返回值未区分所有非 SAT 结果。"
+      },
+      "data_note": "Fixed illustrative range 80–120; lower claims 75 and 100, upper claims 125 and 100. Boundary equality is not used as a witness in this conceptual example."
+    }
+  ],
+  "validation": {
+    "method": "Lanshu output-contract checks plus GIF decoded duration and frame differences; complete MP4 decoding with ffmpeg. ffprobe is not installed in this environment.",
+    "visual_review": "PNG posters and representative timeline frames checked at 1280×800; labels have width assertions. Replaced unsupported raster arrow glyphs with ASCII punctuation.",
+    "excalidraw": "Unique IDs, all text fontFamily=5, empty files dictionary.",
+    "reports": ["wave-observation-validation.json", "wave-bounds-validation.json"]
+  }
+}

@@ -1,0 +1,14 @@
+$ python3 scripts/analyze_overhead.py data/overhead/h100/all/overhead_summary.txt
+📊 Overhead Statistics Across Configurations
+==================================================
+gpt2_layer6_embd1024_ffn4096_head16_pos512_max2_batch4_prompt1 -> 1278.00%
+gpt2_layer8_embd3072_ffn12288_head48_pos1024_max2_batch4_prompt1 -> 1234.00%
+llama_layer6_embd1024_ffn4096_head8_pos512_max2_batch4_prompt1 -> 1585.00%
+llama_layer8_embd4096_ffn16384_head32_pos1024_max2_batch4_prompt1 -> 1274.00%
+qwen_layer6_embd1024_ffn4096_head8_pos512_max2_batch4_prompt1 -> 1473.00%
+qwen_layer8_embd4096_ffn16384_head32_pos1024_max2_batch4_prompt1 -> 1196.00%
+
+Summary:
+  Average Overhead: 1340.00%
+  Minimum Overhead: 1196.00%
+  Maximum Overhead: 1585.00%

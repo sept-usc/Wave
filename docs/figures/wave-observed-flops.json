@@ -1,0 +1,65 @@
+{
+  "source_commit": "29773cdce6bf06313dc340bce5df86d920e2ed21",
+  "measurement": "total_flops_with_tensor for the unique Q and FFN1 rows",
+  "scope": "Selected per-layer kernels, batch 1, six-layer LLaMA-style template, RTX 5080",
+  "new_gpu_run": false,
+  "inputs": [
+    {
+      "path": "data/motivating_example/5080/processed/llama_layer6_embd1024_ffn4096_head8_pos512_max2_batch1_prompt1_processed.csv",
+      "sha256": "7737ae4aa7b25aa36d391bcd3ac1a4d838eebf5f2e5fb57bef930a8c0e6313e1"
+    },
+    {
+      "path": "data/motivating_example/5080/processed/llama_layer6_embd2048_ffn8192_head16_pos512_max2_batch1_prompt1_processed.csv",
+      "sha256": "5c242259226aad691bff1f531af552089223ea99f404155be3ea94c4a0d28d6a"
+    },
+    {
+      "path": "data/motivating_example/5080/processed/llama_layer6_embd4096_ffn16384_head32_pos512_max2_batch1_prompt1_processed.csv",
+      "sha256": "f9da0f658424378411bc6b73bcf18881d2e7f0f7a8c4406f606f7bdf0fa51513"
+    },
+    {
+      "path": "data/motivating_example/5080/processed/llama_layer6_embd512_ffn2048_head4_pos512_max2_batch1_prompt1_processed.csv",
+      "sha256": "508e5e4b2310d78d47ba225c6df89817dc39b2262619b2226fa4ef767da2a3ae"
+    },
+    {
+      "path": "data/motivating_example/5080/processed/llama_layer6_embd768_ffn3072_head6_pos512_max2_batch1_prompt1_processed.csv",
+      "sha256": "c8b27e22b398bd77a2115fc1bfbbf1705f7454d11ebb5d129c6afc9fbb5c6af5"
+    }
+  ],
+  "records": [
+    {
+      "hidden_dimension": 512,
+      "Q": 613888,
+      "FFN1": 2154496,
+      "Q_theory": 524288,
+      "FFN1_theory": 2097152
+    },
+    {
+      "hidden_dimension": 768,
+      "Q": 1305600,
+      "FFN1": 5354496,
+      "Q_theory": 1179648,
+      "FFN1_theory": 4718592
+    },
+    {
+      "hidden_dimension": 1024,
+      "Q": 2265088,
+      "FFN1": 8503296,
+      "Q_theory": 2097152,
+      "FFN1_theory": 8388608
+    },
+    {
+      "hidden_dimension": 2048,
+      "Q": 8560640,
+      "FFN1": 37347328,
+      "Q_theory": 8388608,
+      "FFN1_theory": 33554432
+    },
+    {
+      "hidden_dimension": 4096,
+      "Q": 33767424,
+      "FFN1": 135069696,
+      "Q_theory": 33554432,
+      "FFN1_theory": 134217728
+    }
+  ]
+}

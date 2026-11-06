@@ -1,0 +1,21 @@
+{
+  "checked_date": "2026-11-06",
+  "source_commit": "29773cdce6bf06313dc340bce5df86d920e2ed21",
+  "mode": "CPU reanalysis of bundled logs; no new GPU profiling",
+  "results": {
+    "4090": {
+      "average_overhead_pct": 4688.5,
+      "lower_bound_processed_csv_count": 38
+    },
+    "5080": {
+      "average_overhead_pct": 3006.67,
+      "lower_bound_processed_csv_count": 33
+    },
+    "h100": {
+      "average_overhead_pct": 1340.0,
+      "lower_bound_processed_csv_count": 44
+    }
+  },
+  "upper_bound_processed_csv_count": 14,
+  "threshold_constants_checked": true
+}

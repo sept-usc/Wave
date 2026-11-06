@@ -1,0 +1,11 @@
+{
+  "scene": "wave-observation",
+  "canvas": {"width": 1280, "height": 800, "fps": 10, "duration_seconds": 12},
+  "steps": [
+    ["01  Execute privately", "The model produces GPU kernels. Its weight values are not supplied to the verifier."],
+    ["02  Observe hardware activity", "Arithmetic and memory counters constrain the work that could have occurred."],
+    ["03  Construct constraints", "Operation templates and observed counts restrict feasible model dimensions."],
+    ["04  Search for a violation", "The verifier asks whether any feasible architecture crosses the claimed size bound."]
+  ],
+  "note": "A conceptual mechanism diagram. Metric bars have no measurement scale and are not experiment results. The secure authenticated counter path is assumed, not implemented by the artifact."
+}
