@@ -1,0 +1,108 @@
+{
+  "name": "wave-bounds",
+  "dimensions": [
+    1280,
+    800
+  ],
+  "timeline_fps": 10,
+  "seconds": 16,
+  "svg": "editable vectors",
+  "mp4_codec": "H.264 / yuv420p",
+  "checks": {
+    "ok": true,
+    "checks": [
+      {
+        "name": "gif_exists",
+        "ok": true
+      },
+      {
+        "name": "gif_width",
+        "ok": true,
+        "expected": 1280,
+        "actual": 1280
+      },
+      {
+        "name": "gif_height",
+        "ok": true,
+        "expected": 800,
+        "actual": 800
+      },
+      {
+        "name": "gif_has_motion",
+        "ok": true,
+        "diffs": [
+          {
+            "from": 0,
+            "to": 21,
+            "changed_pixels": 405
+          },
+          {
+            "from": 21,
+            "to": 42,
+            "changed_pixels": 50802
+          },
+          {
+            "from": 42,
+            "to": 63,
+            "changed_pixels": 394
+          },
+          {
+            "from": 63,
+            "to": 83,
+            "changed_pixels": 57822
+          }
+        ]
+      },
+      {
+        "name": "excalidraw_exists",
+        "ok": true
+      },
+      {
+        "name": "excalidraw_unique_ids",
+        "ok": true
+      },
+      {
+        "name": "excalidraw_text_font_family",
+        "ok": true
+      },
+      {
+        "name": "excalidraw_files_empty",
+        "ok": true
+      },
+      {
+        "name": "png_exists",
+        "ok": true
+      },
+      {
+        "name": "png_width",
+        "ok": true,
+        "expected": 1280,
+        "actual": 1280
+      },
+      {
+        "name": "png_height",
+        "ok": true,
+        "expected": 800,
+        "actual": 800
+      },
+      {
+        "name": "gif_duration_ms",
+        "ok": true,
+        "expected": 16000,
+        "actual": 16000
+      },
+      {
+        "name": "gif_multiple_frames",
+        "ok": true,
+        "actual": 84
+      }
+    ]
+  },
+  "sha256": {
+    "wave-bounds.gif": "0b662a42d2d282011a353d1426d49102295d43c2eb24e44d8178d920d113aac0",
+    "wave-bounds.excalidraw": "cd293692c278a17da5942f73df086de0568ae748d618fd0b8ee185515d5aacec",
+    "wave-bounds.mp4": "d3ad20df69adf53b580e092056a5f8ed5a9dfcabdb66a07648735cfbb6b65b91",
+    "wave-bounds.png": "51b6d52d24bf4392418b3431edede1473db3f47b374ec19286d42d3cbd88e563",
+    "wave-bounds.svg": "b866a03740e7a32211401267020bb2f040f9b940f10f673a7f348546d3da4963"
+  }
+}

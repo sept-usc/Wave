@@ -1,0 +1,108 @@
+{
+  "name": "wave-observation",
+  "dimensions": [
+    1280,
+    800
+  ],
+  "timeline_fps": 10,
+  "seconds": 12,
+  "svg": "editable vectors",
+  "mp4_codec": "H.264 / yuv420p",
+  "checks": {
+    "ok": true,
+    "checks": [
+      {
+        "name": "gif_exists",
+        "ok": true
+      },
+      {
+        "name": "gif_width",
+        "ok": true,
+        "expected": 1280,
+        "actual": 1280
+      },
+      {
+        "name": "gif_height",
+        "ok": true,
+        "expected": 800,
+        "actual": 800
+      },
+      {
+        "name": "gif_has_motion",
+        "ok": true,
+        "diffs": [
+          {
+            "from": 0,
+            "to": 22,
+            "changed_pixels": 301
+          },
+          {
+            "from": 22,
+            "to": 45,
+            "changed_pixels": 37349
+          },
+          {
+            "from": 45,
+            "to": 68,
+            "changed_pixels": 32396
+          },
+          {
+            "from": 68,
+            "to": 90,
+            "changed_pixels": 28888
+          }
+        ]
+      },
+      {
+        "name": "excalidraw_exists",
+        "ok": true
+      },
+      {
+        "name": "excalidraw_unique_ids",
+        "ok": true
+      },
+      {
+        "name": "excalidraw_text_font_family",
+        "ok": true
+      },
+      {
+        "name": "excalidraw_files_empty",
+        "ok": true
+      },
+      {
+        "name": "png_exists",
+        "ok": true
+      },
+      {
+        "name": "png_width",
+        "ok": true,
+        "expected": 1280,
+        "actual": 1280
+      },
+      {
+        "name": "png_height",
+        "ok": true,
+        "expected": 800,
+        "actual": 800
+      },
+      {
+        "name": "gif_duration_ms",
+        "ok": true,
+        "expected": 12000,
+        "actual": 12000
+      },
+      {
+        "name": "gif_multiple_frames",
+        "ok": true,
+        "actual": 91
+      }
+    ]
+  },
+  "sha256": {
+    "wave-observation.gif": "0d6ae96d1ba55514c75664bac7ce1950942244cadf192ca9db3030ce34156fc1",
+    "wave-observation.mp4": "983be2e82f9cefb970d21cfb3b368bd2c0a5dd59981bbc6e6a27b69377d08251",
+    "wave-observation.png": "b8fee537c32a2a8748f850abbd064b7c8254271a2663f9897453ecf5700c1eaa",
+    "wave-observation.excalidraw": "895913d70a32d1a0dde05691aca8c6643b7f87d7253e70389ab97c49af5a0885",
+    "wave-observation.svg": "15561fa4ca7c331f9a8017b5d9b65e95b9e6618acb463ada3823fa0caed850e6"
+  }
+}

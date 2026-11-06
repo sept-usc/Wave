@@ -1,14 +1,15 @@
-## gpu_pmc_analyzer
+# GPU PMC analyzer
 
-This folder contains the analyzer used to detect periodic structure in kernel-level metrics exported from Nsight Compute (e.g., layer/token cycles), and to export a CSV for downstream verification.
+This package detects repeated token and layer patterns in kernel metrics exported from NVIDIA Nsight Compute. It assigns operation roles and writes CSVs for the downstream model-size checks.
 
-## Quick test (recommended)
-
-From the project root:
+From the repository root, install the project dependencies with `uv sync`, then process the bundled RTX 5080 data:
 
 ```bash
-uv run scripts/run_preprocessing_pipeline.py data/cloud_inference/5080/csv/
+uv run scripts/run_preprocessing_pipeline.py data/lower_bound/5080/csv/
 ```
 
-- `scripts/run_preprocessing_pipeline.py` reads input CSVs under the provided directory and invokes `src/gpu_pmc_analyzer/analyzer.py` to run cycle detection and export results.
-- If you need a different output location or model family (`gpt2`/`llama`/`qwen`), adjust the corresponding options in `scripts/run_preprocessing_pipeline.py`.
+The pipeline runs the preprocessor, batch analyzer, and role-order check in sequence. Intermediate files go to `data/lower_bound/5080/preprocessed/`; role-labeled output goes to `data/lower_bound/5080/processed/`. Rerunning it can replace existing outputs.
+
+The family-specific patterns for `gpt2`, `llama`, and `qwen` are defined in [`AnalyzerConfig.for_family`](analyzer.py). Those patterns and the periodicity assumptions determine which traces the analyzer can interpret; a matching role sequence alone is not evidence of exact model weights or output correctness.
+
+See the [reproduction guide](../../docs/reproduction.md) for the full experiment workflow, solver-result semantics, and the distinction between saved-data replay and new GPU collection.

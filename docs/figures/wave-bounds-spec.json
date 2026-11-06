@@ -1,0 +1,13 @@
+{
+  "scene": "wave-bounds",
+  "canvas": {"width": 1280, "height": 800, "fps": 10, "duration_seconds": 16},
+  "feasible_range": [80, 120],
+  "units": "illustrative arbitrary parameter-size units, not measured results",
+  "cases": [
+    {"kind":"Lower bound","claim":"P ≥ 75","threshold":75,"query":"Search for a smaller feasible model.","result":"UNSAT","detail":"No feasible candidate lies below 75.","witness":null,"direction":"lower"},
+    {"kind":"Lower bound","claim":"P ≥ 100","threshold":100,"query":"Search for a smaller feasible model.","result":"SAT","detail":"P = 90 is feasible and violates the claimed minimum.","witness":90,"direction":"lower"},
+    {"kind":"Upper bound","claim":"P ≤ 125","threshold":125,"query":"Search for a larger feasible model.","result":"UNSAT","detail":"No feasible candidate lies above 125.","witness":null,"direction":"upper"},
+    {"kind":"Upper bound","claim":"P ≤ 100","threshold":100,"query":"Search for a larger feasible model.","result":"SAT","detail":"P = 110 is feasible and violates the claimed maximum.","witness":110,"direction":"upper"}
+  ],
+  "note": "This is an explanatory candidate-set illustration, not a literal trace of the current CLI. SAT identifies a violating feasible candidate; UNSAT excludes one only within the modeled feasible set and assumptions. UNKNOWN is inconclusive; the current artifact's verify() conflates non-SAT outcomes in its return value."
+}

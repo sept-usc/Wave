@@ -1,0 +1,10 @@
+{
+  "en": {
+    "site_manuscript_sha256": "87ed242cd6bd539716fd44b1f456a7393419319b4b4ddacfafd9981e998b80db",
+    "repository_copy_sha256": "6c84015ab127cd87efb5118e6aef188af55c305a980eb69f83f4686f9580b5bc"
+  },
+  "zh": {
+    "site_manuscript_sha256": "4f26507288e9fae1f42ce7efc75672fccf3355b4767d98d2304c88bfe1336a68",
+    "repository_copy_sha256": "37792182a2fa7b47e16edb7fec9cd220504da12adcf3a1785026b28a08d5edb6"
+  }
+}

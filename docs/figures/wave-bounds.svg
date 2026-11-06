@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc"><title id="title">Wave: what the bound search asks</title><desc id="desc">Illustrative feasible parameter range from 80 to 120 in arbitrary units, not measured results or an actual solver trace. SAT means a violating candidate exists. An actual unknown outcome is inconclusive.</desc><rect width="1280" height="800" fill="#081012"/>
+<rect x="18" y="18" width="1244" height="764" rx="22" fill="#081012" stroke="#34474c" stroke-width="1.5"/>
+<rect x="48" y="44" width="112" height="47" rx="12" fill="#173d32" stroke="#173d32" stroke-width="1.5"/>
+<text x="61.00" y="78.52" fill="#a5e49a" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700">WAVE</text>
+<text x="180.00" y="79.04" fill="#f3f4ef" font-family="Arial, Helvetica, sans-serif" font-size="33">Search for a counterexample</text>
+<text x="1121.50" y="74.72" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="19">verifiable.pro</text>
+<text x="49.00" y="131.24" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="23">Toy example: observations allow parameter size P from 80 to 120.</text>
+<text x="48.00" y="761.20" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="15">02 / BOUND SEARCH</text>
+<text x="49.00" y="200.40" fill="#f3f4ef" font-family="Arial, Helvetica, sans-serif" font-size="30">Lower bound: claimed P ≥ 100</text>
+<text x="49.00" y="237.24" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="23">Search for a smaller feasible model.</text>
+<rect x="424.0" y="300" width="432.0" height="102" rx="5" fill="#193c37" stroke="#386f63" stroke-width="1.5"/>
+<text x="510.25" y="337.24" fill="#a5e49a" font-family="Arial, Helvetica, sans-serif" font-size="23">Feasible models: 80–120</text>
+<rect x="100.0" y="422" width="540.0" height="39" rx="4" fill="#472e2a" stroke="#9c655c" stroke-width="1.5"/>
+<text x="267.50" y="447.96" fill="#ff9c91" font-family="Arial, Helvetica, sans-serif" font-size="17">Search below the minimum</text>
+<polyline points="100.0,402 1180.0,402" fill="none" stroke="#f3f4ef" stroke-width="2"/>
+<polyline points="100.0,402 100.0,410" fill="none" stroke="#bac7c9" stroke-width="1"/>
+<text x="90.50" y="483.96" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="17">50</text>
+<polyline points="208.0,402 208.0,410" fill="none" stroke="#bac7c9" stroke-width="1"/>
+<text x="198.50" y="483.96" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="17">60</text>
+<polyline points="316.0,402 316.0,410" fill="none" stroke="#bac7c9" stroke-width="1"/>
+<text x="306.50" y="483.96" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="17">70</text>
+<polyline points="424.0,402 424.0,410" fill="none" stroke="#bac7c9" stroke-width="1"/>
+<text x="414.50" y="483.96" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="17">80</text>
+<polyline points="532.0,402 532.0,410" fill="none" stroke="#bac7c9" stroke-width="1"/>
+<text x="522.50" y="483.96" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="17">90</text>
+<polyline points="640.0,402 640.0,410" fill="none" stroke="#bac7c9" stroke-width="1"/>
+<text x="625.75" y="483.96" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="17">100</text>
+<polyline points="748.0,402 748.0,410" fill="none" stroke="#bac7c9" stroke-width="1"/>
+<text x="733.75" y="483.96" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="17">110</text>
+<polyline points="856.0,402 856.0,410" fill="none" stroke="#bac7c9" stroke-width="1"/>
+<text x="841.75" y="483.96" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="17">120</text>
+<polyline points="964.0,402 964.0,410" fill="none" stroke="#bac7c9" stroke-width="1"/>
+<text x="949.75" y="483.96" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="17">130</text>
+<polyline points="1072.0,402 1072.0,410" fill="none" stroke="#bac7c9" stroke-width="1"/>
+<text x="1057.75" y="483.96" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="17">140</text>
+<polyline points="1180.0,402 1180.0,410" fill="none" stroke="#bac7c9" stroke-width="1"/>
+<text x="1165.75" y="483.96" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="17">150</text>
+<polyline points="640.0,270 640.0,464" fill="none" stroke="#f4c06a" stroke-width="2" stroke-dasharray="7 7"/>
+<text x="582.50" y="279.96" fill="#f4c06a" font-family="Arial, Helvetica, sans-serif" font-size="17">Claimed bound</text>
+<circle cx="532.0" cy="375" r="10" fill="#ff9c91"/>
+<text x="459.75" y="364.96" fill="#ff9c91" font-family="Arial, Helvetica, sans-serif" font-size="17">Violating candidate</text>
+<rect x="49" y="511" width="1181" height="104" rx="12" fill="#14252a" stroke="#34474c" stroke-width="1.5"/>
+<rect x="68" y="530" width="123" height="62" rx="9" fill="#2d2421" stroke="#ff9c91" stroke-width="1.5"/>
+<text x="103.25" y="571.76" fill="#ff9c91" font-family="Arial, Helvetica, sans-serif" font-size="27">SAT</text>
+<text x="215.00" y="554.00" fill="#f3f4ef" font-family="Arial, Helvetica, sans-serif" font-size="25">P = 90 is feasible and violates the claimed minimum.</text>
+<text x="215.00" y="587.36" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="22">Claim is not certified.</text>
+<rect x="49" y="640" width="287" height="62" rx="10" fill="#101d20" stroke="#34474c" stroke-width="1"/>
+<text x="120.75" y="679.48" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="21">P ≥ 75: UNSAT</text>
+<rect x="347" y="640" width="287" height="62" rx="10" fill="#101d20" stroke="#7de3d2" stroke-width="2"/>
+<text x="428.00" y="679.48" fill="#7de3d2" font-family="Arial, Helvetica, sans-serif" font-size="21">P ≥ 100: SAT</text>
+<rect x="645" y="640" width="287" height="62" rx="10" fill="#101d20" stroke="#34474c" stroke-width="1"/>
+<text x="711.00" y="679.48" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="21">P ≤ 125: UNSAT</text>
+<rect x="943" y="640" width="287" height="62" rx="10" fill="#101d20" stroke="#34474c" stroke-width="1"/>
+<text x="1024.00" y="679.48" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="21">P ≤ 100: SAT</text>
+<text x="613.50" y="761.20" fill="#bac7c9" font-family="Arial, Helvetica, sans-serif" font-size="15">Illustrative units, not paper measurements. An UNKNOWN result would remain inconclusive.</text>
+</svg>
